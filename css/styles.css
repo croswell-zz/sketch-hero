@@ -1,7 +1,39 @@
-p {
-  color: blue;
-  text-align: center; }
+/*
+Syntax error: The line was indented 2 levels deeper than the previous line.
+        on line 28 of styles.css
 
-a {
-  color: black;
-  font-weight: 400; }
+23:   max-width: 1000px;
+24:   overflow: hidden; }
+25: 
+26: /*
+27: @media (min-width: 30em) {
+28:     .row { width: 100%; display: table; table-layout: fixed; }
+29:     .col { display: table-cell; }
+30: }
+31: *\/
+32: /*----- TYPOGRAPHY --------------------------*\/
+33: h1, h2, h3, h4, p, a {
+
+Backtrace:
+styles.css:28
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.10/lib/sass/engine.rb:527:in `tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.10/lib/sass/engine.rb:412:in `_to_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.10/lib/sass/engine.rb:274:in `render'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.10/lib/sass/plugin/compiler.rb:378:in `update_stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.10/lib/sass/plugin/compiler.rb:189:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.10/lib/sass/plugin/compiler.rb:186:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.10/lib/sass/plugin/compiler.rb:186:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.10/lib/sass/plugin/compiler.rb:221:in `watch'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.10/lib/sass/plugin.rb:108:in `method_missing'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.10/lib/sass/exec.rb:509:in `watch_or_update'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.10/lib/sass/exec.rb:346:in `process_result'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.10/lib/sass/exec.rb:43:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.10/lib/sass/exec.rb:22:in `parse!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.10/bin/sass:13:in `<top (required)>'
+/usr/bin/sass:23:in `load'
+/usr/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: The line was indented 2 levels deeper than the previous line.\A         on line 28 of styles.css\A \A 23:   max-width: 1000px;\A 24:   overflow: hidden; }\A 25: \A 26: /*\A 27: @media (min-width: 30em) {\A 28:     .row { width: 100%; display: table; table-layout: fixed; }\A 29:     .col { display: table-cell; }\A 30: }\A 31: */\A 32: /*----- TYPOGRAPHY --------------------------*/\A 33: h1, h2, h3, h4, p, a {"; }
