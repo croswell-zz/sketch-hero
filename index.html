@@ -3,17 +3,19 @@
 <head>
 	<meta charset="utf-8">
 	<title>Sketch Hero</title>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
 	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
 	<link rel="stylesheet" media="screen" href="css/normalize.css">
 	<link rel="stylesheet" media="screen" href="css/styles.css">
 </head>
 <body>
+<!-- THIS IS THE HERO SECTION  -->	
+
 	<div class="section" id="hero">
 		<div class="container">
 			<div id="branding">
-				<img src="#">
-				<p><a href="#">coming soon</a></p>
+				<div class="logo-container"><img src="images/logo-full.png"></div>
+				<button class="coming-soon"><a href="#newsletter">Coming soon!</a></button>
 			</div>
 			<div class="headline">
 				<h1>Sketch Hero</h1>
@@ -21,116 +23,173 @@
 			</div>
 		</div>
 	</div>
+
+<!-- END OF  HERO SECTION  -->	
+
+
 	<div class="section" id="features-list-a">
 		<div class="container">
-			<div class="feature-left">
-				<div class="left-image-container">
-					<img src="#">
-				</div>
-				<h2>Explore every feature.</h2>
-				<p>When Sketch 3 is released in a few weeks it will come packed with dozens of features including symbols, art boards, grouping, masking and transforms. Sketch Hero goes into each one of them, explaining how they work and providing useful examples.</p>
-			</div>
-			<div class="feature-right">
-				<div class="right-image-container">
-					<img src="#">
-				</div>
-				<h2>Resource files + eBook</h2>
-				<p>We'll go through each feature with a clear and detailed explanation and back it up with use-cases and interviews. And because nothing beats practice, you'll get .sketch files to explore each feature and how it could fit into your workflow.</p>
+			<div class="description">
+				<p><strong>Sketch Hero is an eBook to help you get the most out of Sketch</strong>. From creating circles and rectangles during your first steps to integrating symbols and plugins into a powerful workflow, everything you need to know will be at your fingertips — backed up by interviews, sample files, and resources so that you can get your hands dirty and start designing right away!</p>
 			</div>
 		</div>
 	</div>
-	<div class="section" id="details-first-row">
+
+	<!-- THIS IS THE FIRST FEATURE LIST  -->
+
+	<div class="section" id="features-list-a">
 		<div class="container">
-			<div class="detail" id="detail-name">
-				<div class="detail-image-container">
-					<img src="#">
+			<div class="features-wrapper">
+				<div class="feature clearfix">
+					<div class="feature-image">
+						<img src="images/spotlight.png">
+					</div>
+					<div class="feature-copy">
+						<h2>Explore every feature.</h2>
+						<p>When Sketch 3 is released in a few weeks it will come packed with dozens of features including symbols, art boards, grouping, masking and transforms. Sketch Hero goes into each one of them, explaining how they work and providing useful examples.</p>
+					</div>
 				</div>
-				<h4>Living Document</h4>
-				<p>Night you're you greater, great called i called, from deep abundantly multiply one, itself moving great upon so also shall land earth multiply were give. Winged cattle sea hath there years form. Under.</p>
-			</div>
-			<div class="detail" id="detail-name">
-				<div class="detail-image-container">
-					<img src="#">
+				<div class="feature clearfix">
+					<div class="feature-image">
+						<img src="images/resources.png">
+					</div>
+					<div class="feature-copy">
+						<h2>Resource files + eBook</h2>
+						<p>We'll go through each feature with a clear and detailed explanation and back it up with use-cases and interviews. And because nothing beats practice, you'll get .sketch files to explore each feature and how it could fit into your workflow.</p>
+					</div>
 				</div>
-				<h4>Resource List</h4>
-				<p>Night you're you greater, great called i called, from deep abundantly multiply one, itself moving great upon so also shall land earth multiply were give. Winged cattle sea hath there years form. Under.</p>
-			</div>
-			<div class="detail" id="detail-name">
-				<div class="detail-image-container">
-					<img src="#">
-				</div>
-				<h4>Illustration Included</h4>
-				<p>Night you're you greater, great called i called, from deep abundantly multiply one, itself moving great upon so also shall land earth multiply were give. Winged cattle sea hath there years form. Under.</p>
 			</div>
 		</div>
 	</div>
-	<div class="section" id="details-second-row">
+
+<!-- END OF FIRST FEATURE LIST  -->	
+
+<!-- THIS IS THE DETAILS SECTION  -->	
+
+	<div class="section" id="details">
 		<div class="container">
-			<div class="detail" id="detail-name">
-				<div class="detail-image-container">
-					<img src="#">
+			<div class="row">
+				<div class="col detail" id="detail-name">
+					<div class="detail-image-container">
+						<img src="#">
+					</div>
+					<h4>Living Document</h4>
+					<p>Sketch is constantly being updated. Be among the first to dive into each update to see what the bug fixes and improvements mean to you.</p>
 				</div>
-				<h4>Rock-Solid Workflows</h4>
-				<p>Night you're you greater, great called i called, from deep abundantly multiply one, itself moving great upon so also shall land earth multiply were give. Winged cattle sea hath there years form. Under.</p>
+				<div class="col detail-spacer"></div>
+				<div class="col detail" id="detail-name">
+					<div class="detail-image-container">
+						<img src="#">
+					</div>
+					<h4>Resource List</h4>
+					<p>Need a great font or icon set for an upcoming project? You'll get a list of curated resources made specifically for Sketch.</p>
+				</div>
+				<div class="col detail-spacer"></div>
+				<div class="col detail" id="detail-name">
+					<div class="detail-image-container">
+						<img src="#">
+					</div>
+					<h4>Illustration Included</h4>
+					<p>UI design is only part of the story. We'll take a look at practical tips and details to get you started.</p>
+				</div>
 			</div>
-			<div class="detail" id="detail-name">
-				<div class="detail-image-container">
-					<img src="#">
+			<div class="col detail" id="detail-name">
+					<div class="detail-image-container">
+						<img src="#">
+					</div>
+					<h4>Rock-Solid Workflows</h4>
+					<p>Using a tool is more than just knowing what it can do - it's knowing how to make it do those things at lightning speed.</p>
 				</div>
-				<h4>Join A Community</h4>
-				<p>Night you're you greater, great called i called, from deep abundantly multiply one, itself moving great upon so also shall land earth multiply were give. Winged cattle sea hath there years form. Under.</p>
-			</div>
-			<div class="detail" id="detail-name">
-				<div class="detail-image-container">
-					<img src="#">
+				<div class="col detail-spacer"></div>
+				<div class="col detail" id="detail-name">
+					<div class="detail-image-container">
+						<img src="#">
+					</div>
+					<h4>Join A Community</h4>
+					<p>You'll be joining a generous excited and creative community looking to push design on the web further every day.</p>
 				</div>
-				<h4>Satisfaction Guranteed</h4>
-				<p>Night you're you greater, great called i called, from deep abundantly multiply one, itself moving great upon so also shall land earth multiply were give. Winged cattle sea hath there years form. Under.</p>
+				<div class="col detail-spacer"></div>
+				<div class="col detail" id="detail-name">
+					<div class="detail-image-container">
+						<img src="#">
+					</div>
+					<h4>Satisfaction Guranteed</h4>
+					<p>If <strong>Sketch Hero</strong> doesn't make you better and faster at using Sketch, I'll refund you 100% of the purchase price. No questions asked.</p>
+				</div>
 			</div>
 		</div>
 	</div>
+
+<!-- END OF DETAILS SECTION  -->
+
+<!-- THIS IS THE SECOND FEATURE LIST  -->
+
 	<div class="section" id="features-list-b">
 		<div class="container">
-			<div class="feature-left">
-				<div class="left-image-container">
-					<img src="#">
+			<div class="features-wrapper">
+				<div class="feature clearfix">
+					<div class="feature-image">
+						<img src="images/iPhone.png">
+					</div>
+					<div class="feature-copy">
+						<h2>Your designs on every device
+
+</h2>
+						<p>With Sketch Mirror, it’s easy to see how your design will look on an iOS device. We'll look at mobile design and how live mirroring can lead to quicker prototyping and higher quality final products.</p>
+					</div>
 				</div>
-				<h2>Your designs on every device</h2>
-				<p>With Sketch Mirror, it’s easy to see how your design will look on an iOS device. We'll look at mobile design and how live mirroring can lead to quicker prototyping and higher quality final products.</p>
-			</div>
-			<div class="feature-right">
-				<div class="right-image-container">
-					<img src="#">
+				<div class="feature clearfix">
+					<div class="feature-image">
+						<img src="images/listen.png">
+					</div>
+					<div class="feature-copy">
+						<h2>Designer interviews
+
+</h2>
+						<p>Knowing what Sketch can do is one thing. Figuring out how to make it work for you is another. That’s why Sketch Hero will get the perspective of designers who use it every day.</p>
+					</div>
 				</div>
-				<h2>Designer interviews</h2>
-				<p>Knowing what Sketch can do is one thing. Figuring out how to make it work for you is another. That’s why Sketch Hero will get the perspective of designers who use it every day.</p>
 			</div>
 		</div>
 	</div>
-	<div class="section" id="opt-in">
+
+<!-- END OF SECOND FEATURE LIST  -->
+
+<!-- THIS IS THE NEWSLETTER OPT IN  -->
+
+	<div class="section" id="newsletter">
 		<div class="container">
-			<div class="get-updates">
-				<h1>Stay updated</h1>
+			<div class="optin-container">
+				<h2>Stay updated</h2>
 				<p>Join 500 other people and get updated when Sketch Hero launches!</p>
-			</div>
-			<form class="optin-form" action method="POST">
+				<form class="optin-form" action method="POST">
           		<input type="text" placeholder="Email Address" class="form-input"><p class="optin-error"></p>
        			<div class="btn-container">
           			<button type="submit">Subscribe</button>
        			</div>
-			</form>
-			<div class="coming-soon">
-				<p>Sketch Hero is coming soon!</p>
+				</form>
+				<p class="scarcity-clause">Sketch Hero is coming soon!</p>
 			</div>
 		</div>
 	</div>
+
+<!-- END OF NEWSLETTER OPT IN  -->
+
+<!-- THIS IS THE FOOTER  -->
+
 	<div class="section" id="footer">
 		<div class="container">
 			<div class="terms">
 				<p>Not owned, operated or affiliated in any way with Sketch or Bohemian Coding.</p>
-				<a href="https://twitter.com">Twitter</a>
+			</div>
+			<div class="twitter-button-container">
+				<a href="https://twitter.com/share" class="twitter-share-button" data-text="Checkout this site!" data-via="samcroswell" data-size="large" data-count="none">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 			</div>
 		</div>
 	</div>
+
+<!-- END OF FOOTER  -->
+
 </body>
 </html>

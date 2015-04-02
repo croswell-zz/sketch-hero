@@ -1,39 +1,267 @@
+/*----- GENERAL --------------------------*/
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  color: #000;
+  font-weight: 400;
+  background-color: #FFF; }
+
+.section {
+  position: relative;
+  width: 100%;
+  overflow: hidden; }
+
+.container {
+  position: relative;
+  padding: 0 16px;
+  margin: 0 auto;
+  max-width: 960px;
+  overflow: hidden; }
+
+@media (min-width: 30em) {
+  .row {
+    width: 100%;
+    display: table;
+    table-layout: fixed; }
+
+  .col {
+    display: table-cell; } }
+.clearfix {
+  overflow: auto; }
+
+/*----- TYPOGRAPHY --------------------------*/
+h1, h2, h3, h4, p, a {
+  margin: 0;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  hyphens: none; }
+
+h1, h2, h3, h4 {
+  font-weight: 700; }
+
+h1 {
+  font-size: 64px; }
+
+h2 {
+  font-size: 36px;
+  line-height: 40px; }
+
+h3 {
+  font-size: 24px; }
+
+h4 {
+  font-size: 18px; }
+
+p {
+  line-height: 36px; }
+
+a {
+  text-decoration: none; }
+
+/*----- HERO --------------------------*/
+#hero {
+  background: #535e94;
+  padding: 40px 0; }
+
+.logo-container {
+  float: left;
+  clear: left;
+  max-width: 56px;
+  height: auto; }
+  .logo-container img {
+    width: 100%; }
+
+.coming-soon {
+  float: right;
+  font-weight: 400; }
+  .coming-soon a {
+    color: #fff; }
+
+.headline {
+  margin: 100px 0;
+  color: #FFF;
+  text-align: center; }
+  .headline h1 {
+    padding: 20px 0; }
+  .headline h3 {
+    font-weight: 400;
+    color: #cbced0; }
+
+/*----- DESCRIPTION ------------------------*/
+.description {
+  padding: 40px 80px;
+  color: #535e94; }
+
+/*----- FEATURES LIST ------------------------*/
+.features-wrapper {
+  margin: 20px 0;
+  padding: 40px 0; }
+
+.feature {
+  margin: 0px 0;
+  padding: 40px 0; }
+
+.feature-image {
+  padding: 0 70px 40px 0;
+  max-width: 150;
+  height: auto;
+  float: left; }
+
+.feature-copy {
+  float: right;
+  width: 70%; }
+  .feature-copy h2 {
+    padding-bottom: 30px;
+    color: #303030; }
+  .feature-copy p {
+    color: #a4a4a4; }
+
+/*----- DETAILS --------------------------*/
+#details {
+  background: #535e94;
+  padding: 40px 0;
+  text-align: center;
+  color: #FFF; }
+  #details p {
+    text-align: left;
+    font-size: 14px;
+    line-height: 24px; }
+
+.detail {
+  padding: 30px 0; }
+  .detail h4 {
+    padding: 20px 0; }
+
+.detail-spacer {
+  width: 30px;
+  vertical-align: baseline; }
+
+/*----- NEWSLETTER --------------------------*/
+#newsletter {
+  background: #535e94;
+  color: #FFF;
+  padding: 40px 0; }
+
+.optin-container {
+  max-width: 600px;
+  margin: 0 auto; }
+  .optin-container h2 {
+    padding: 20px 0; }
+
+form {
+  padding: 40px 0; }
+
+input {
+  width: 100%;
+  vertical-align: baseline;
+  display: inline-block;
+  border: 0; }
+
+.optin-form input {
+  background: #FFF;
+  vertical-align: top;
+  color: #1d1d1d;
+  outline: none;
+  font-size: 16px;
+  padding: 0 10px;
+  height: 50px;
+  text-indent: 8px;
+  font-family: "Lato",sans-serif;
+  -webkit-appearance: none;
+  border: none;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px; }
+
+.btn-container {
+  padding: 40px 0; }
+
+button {
+  outline: none;
+  padding: 0 40px;
+  text-align: center;
+  color: #FFF;
+  font-family: "Lato",sans-serif;
+  height: 50px;
+  border: none;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  background-color: #7ecb3d; }
+
 /*
-Syntax error: The line was indented 2 levels deeper than the previous line.
-        on line 28 of styles.css
+button:hover {
+  background-color: ;
+}
 
-23:   max-width: 1000px;
-24:   overflow: hidden; }
-25: 
-26: /*
-27: @media (min-width: 30em) {
-28:     .row { width: 100%; display: table; table-layout: fixed; }
-29:     .col { display: table-cell; }
-30: }
-31: *\/
-32: /*----- TYPOGRAPHY --------------------------*\/
-33: h1, h2, h3, h4, p, a {
+button:active {
+  background: ; 
+}
 
-Backtrace:
-styles.css:28
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.10/lib/sass/engine.rb:527:in `tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.10/lib/sass/engine.rb:412:in `_to_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.10/lib/sass/engine.rb:274:in `render'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.10/lib/sass/plugin/compiler.rb:378:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.10/lib/sass/plugin/compiler.rb:189:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.10/lib/sass/plugin/compiler.rb:186:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.10/lib/sass/plugin/compiler.rb:186:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.10/lib/sass/plugin/compiler.rb:221:in `watch'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.10/lib/sass/plugin.rb:108:in `method_missing'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.10/lib/sass/exec.rb:509:in `watch_or_update'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.10/lib/sass/exec.rb:346:in `process_result'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.10/lib/sass/exec.rb:43:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.10/lib/sass/exec.rb:22:in `parse!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.10/bin/sass:13:in `<top (required)>'
-/usr/bin/sass:23:in `load'
-/usr/bin/sass:23:in `<main>'
+button:focus {
+  outline: 0; 
+}
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: The line was indented 2 levels deeper than the previous line.\A         on line 28 of styles.css\A \A 23:   max-width: 1000px;\A 24:   overflow: hidden; }\A 25: \A 26: /*\A 27: @media (min-width: 30em) {\A 28:     .row { width: 100%; display: table; table-layout: fixed; }\A 29:     .col { display: table-cell; }\A 30: }\A 31: */\A 32: /*----- TYPOGRAPHY --------------------------*/\A 33: h1, h2, h3, h4, p, a {"; }
+/*----- FOOTER --------------------------*/
+#footer {
+  background: #4a4a4a;
+  color: gray;
+  text-align: center;
+  padding: 40px 0; }
+
+.twitter-button-container {
+  padding: 30px 0; }
+
+/*----- MEDIA QUIERES --------------------------*/
+@media screen and (max-width: 800px) {
+  .container {
+    padding: 0 20px; }
+
+  .row {
+    display: block; }
+
+  .col {
+    display: block; }
+
+  .feature-list {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%; }
+
+  .description {
+    margin: 0;
+    padding: 40px 40px;
+    text-align: left; }
+
+  .feature {
+    padding: 40px 0;
+    margin: 0;
+    text-align: center; }
+
+  .feature-copy, .feature-image {
+    float: none;
+    display: block;
+    width: 100%; }
+
+  .feature-copy {
+    padding: 0;
+    margin: 0; }
+
+  .feature-image {
+    padding: 50px 0; }
+
+  #details p {
+    text-align: center; }
+
+  .btn-container {
+    padding: 10px 0; }
+    .btn-container button {
+      width: 100%; } }

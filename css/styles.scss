@@ -6,7 +6,7 @@
 
 body {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
+	font-size: 18px;
 	color: #000;
 	font-weight: 400;
 	background-color: #FFF;
@@ -23,16 +23,18 @@ body {
 	position: relative;
 	padding: 0 16px;
 	margin: 0 auto;
-	max-width: 1000px;
+	max-width: 960px;
 	overflow: hidden;
 }
 
-/*
 @media (min-width: 30em) {
     .row { width: 100%; display: table; table-layout: fixed; }
     .col { display: table-cell; }
 }
-*/
+
+.clearfix {
+	overflow: auto;
+}
 
 
 /*----- TYPOGRAPHY --------------------------*/
@@ -47,13 +49,18 @@ h1, h2, h3, h4, p, a {
     hyphens: none;
 }
 
+h1, h2, h3, h4 {
+	font-weight: 700;
+}
+
 
 h1 {
-	font-size: 50px;
+	font-size: 64px;
 }
 
 h2 {
-	font-size: 30px;
+	font-size: 36px;
+	line-height: 40px;
 }
 
 h3 {
@@ -62,28 +69,285 @@ h3 {
 
 h4 {
 	font-size: 18px;
+
 }
 
 p {
-	line-height: 24px;
+	line-height: 36px;
 }
 
 a {
 	text-decoration: none;
-	color: blue;
-}
-
-a:hover {
-  color: green; 
 }
 
 
 /*----- HERO --------------------------*/
 
 #hero {
+	background: #535e94;
+	padding: 40px 0;
+}
+
+.logo-container {
+	float: left;
+	clear: left;
+	max-width: 56px;
+	height: auto;
+
+	img {
+		width: 100%;
+	}
+}
+
+.coming-soon {
+	float: right;
+	font-weight: 400;
+
+		a {
+			color: #fff;
+		}
+}
+
+.headline {
+	margin: 100px 0;
+	color: #FFF;
+	text-align: center;
+
+	h1 {
+		padding: 20px 0;
+	}
+
+	h3 {
+		font-weight: 400;
+		color: #cbced0;
+	}
+}
+
+/*----- DESCRIPTION ------------------------*/
+
+.description {
+	padding: 40px 80px;
+	color: #535e94;
+}
+
+/*----- FEATURES LIST ------------------------*/
+
+.features-wrapper {
+	margin: 20px 0;
+	padding: 40px 0;
+}
+
+.feature {
+	margin: 0px 0;
+	padding: 40px 0;
+}
+
+.feature-image {
+	padding: 0 70px 40px 0;
+	max-width: 150;
+	height: auto;
+	float: left;
+}
+
+
+.feature-copy { 
+	float: right;
+	width: 70%;
 	
+		h2 {
+			padding-bottom: 30px;
+			color: #303030;
+		}
+
+		p {
+			color: #a4a4a4;
+		}
 }
 
 
 
+/*----- DETAILS --------------------------*/
 
+
+#details {
+	background: #535e94;
+	padding: 40px 0;
+	text-align: center;
+	color: #FFF;
+	
+		p {
+			text-align: left;
+			font-size: 14px;
+			line-height: 24px;
+		}
+}
+
+.detail {
+	padding: 30px 0;
+		
+		h4 {
+			padding: 20px 0;
+		}	
+}
+
+.detail-spacer {
+	width: 30px;
+	vertical-align: baseline;
+}
+
+/*----- NEWSLETTER --------------------------*/
+
+#newsletter {
+	background: #535e94;
+	color: #FFF;
+	padding: 40px 0;	
+}
+
+.optin-container {
+	max-width: 600px;
+	margin: 0 auto;	
+	
+		h2 {
+			padding: 20px 0;
+		}		
+}
+
+form {
+	padding: 40px 0;
+}
+
+input {
+	width: 100%;
+	vertical-align: baseline;
+	display: inline-block;
+	border: 0;
+}
+
+.optin-form input {
+	background: #FFF;
+	vertical-align: top;
+	color: #1d1d1d;
+	outline: none;
+	font-size: 16px;
+	padding: 0 10px;
+	height: 50px;
+	text-indent: 8px;
+	font-family: "Lato",sans-serif;
+	-webkit-appearance: none;
+	border: none;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px; 
+}
+
+.btn-container {
+	padding: 40px 0;
+}
+
+
+button {
+	outline: none;
+	padding: 0 40px;
+	text-align: center;
+	color: #FFF;
+	font-family: "Lato",sans-serif;
+	height: 50px;
+	border: none;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px; 
+	background-color: #7ecb3d;
+}
+
+/*
+button:hover {
+  background-color: ;
+}
+
+button:active {
+  background: ; 
+}
+
+button:focus {
+  outline: 0; 
+}
+*/
+
+
+
+
+/*----- FOOTER --------------------------*/
+
+#footer {
+	background: #4a4a4a;
+	color: gray;
+	text-align: center;
+	padding: 40px 0;
+}
+
+.twitter-button-container {
+	padding: 30px 0;
+}
+
+
+/*----- MEDIA QUIERES --------------------------*/
+
+@media screen and (max-width: 800px) {
+	
+	.container {
+		padding: 0 20px;
+	}
+	
+	.row { display: block;
+	
+	}
+	
+	.col {
+		display: block;
+	}
+		
+	.feature-list {
+		text-align: center;
+		margin: 0 auto;
+		width: 100%;
+	}
+	
+	.description {
+		margin: 0;
+		padding: 40px 40px;
+		text-align: left;
+	}
+	
+	.feature {
+		padding: 40px 0;
+		margin: 0;
+		text-align: center;
+	}
+
+	.feature-copy, .feature-image {
+		float: none;
+		display: block;
+		width: 100%;
+	}
+	
+	.feature-copy {
+		padding: 0;
+		margin: 0;
+	}
+	
+	.feature-image {
+		padding: 50px 0;
+	}
+	
+	#details p {
+		text-align: center;
+	}
+
+	.btn-container {
+		padding: 10px 0;
+
+		button {
+			width: 100%;
+		}
+	}
+}
