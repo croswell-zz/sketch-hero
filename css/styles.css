@@ -105,24 +105,35 @@ a {
   margin: 20px 0;
   padding: 40px 0; }
 
-.feature {
+.feature-left, .feature-right {
   margin: 0px 0;
   padding: 40px 0; }
 
-.feature-image {
-  padding: 0 70px 40px 0;
-  max-width: 150;
-  height: auto;
+.feature-left-image {
+  padding: 0 40px 60px 0;
   float: left; }
 
-.feature-copy {
-  float: right;
-  width: 70%; }
-  .feature-copy h2 {
+.feature-right-image {
+  padding: 0 0 60px 40px;
+  float: right; }
+
+.feature-left-image img, .feature-right img {
+  width: 200px;
+  height: auto; }
+
+.feature-left-copy, .feature-right-copy {
+  width: 65%; }
+  .feature-left-copy h2, .feature-right-copy h2 {
     padding-bottom: 30px;
     color: #303030; }
-  .feature-copy p {
+  .feature-left-copy p, .feature-right-copy p {
     color: #a4a4a4; }
+
+.feature-left-copy {
+  float: right; }
+
+.feature-right-copy {
+  float: left; }
 
 /*----- DETAILS --------------------------*/
 #details {
@@ -221,13 +232,14 @@ button:focus {
   padding: 30px 0; }
 
 /*----- MEDIA QUIERES --------------------------*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 831px) {
   .container {
     padding: 0 20px; }
 
   .row {
     display: block; }
 
+  f
   .col {
     display: block; }
 
@@ -238,24 +250,25 @@ button:focus {
 
   .description {
     margin: 0;
-    padding: 40px 40px;
+    padding: 40px 40px 0 40px;
     text-align: left; }
 
-  .feature {
+  .feature-left, .feature-right {
     padding: 40px 0;
     margin: 0;
     text-align: center; }
 
-  .feature-copy, .feature-image {
+  .feature-left-copy, .feature-right-copy,
+  .feature-left-image, .feature-right-image {
     float: none;
     display: block;
     width: 100%; }
 
-  .feature-copy {
+  .feature-left-copy, .feature-right-copy {
     padding: 0;
     margin: 0; }
 
-  .feature-image {
+  .feature-left-image, .feature-right-image {
     padding: 50px 0; }
 
   #details p {
