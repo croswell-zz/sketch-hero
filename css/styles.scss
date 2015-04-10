@@ -152,10 +152,16 @@ a {
 	float: right;
 }
 
-.feature-left-image img, .feature-right img {
+#spotlight img {
 	width: 200px;
 	height: auto;
 }
+
+#resources img {
+	width: 315px;
+	height: auto;
+}
+
 
 .feature-left-copy, .feature-right-copy {
 	width: 65%;
@@ -168,6 +174,10 @@ a {
 		p {
 			color: #a4a4a4;
 		}
+}
+
+#resource-feature-copy {
+	width: 55%;
 }
 
 .feature-left-copy { 
@@ -348,6 +358,10 @@ button:focus {
 	.feature-left-copy, .feature-right-copy {
 		padding: 0;
 		margin: 0;
+	}
+
+	#resource-feature-copy {
+		width: 100%;
 	}
 	
 	.feature-left-image, .feature-right-image {
