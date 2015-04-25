@@ -145,6 +145,10 @@ a {
 .feature-left-image {
 	padding: 0 40px 60px 0;
 	float: left;
+	
+	#devices {
+		padding: 0 20px 60px 0;
+	}
 }
 
 .feature-right-image {
@@ -162,6 +166,20 @@ a {
 	height: auto;
 }
 
+#devices img {
+	width: 255px;
+	height: auto;
+}
+
+#devices img {
+	width: 255px;
+	height: auto;
+}
+
+#designer-interviews img {
+	width: 222px;
+	height: auto;
+}
 
 .feature-left-copy, .feature-right-copy {
 	width: 65%;
@@ -176,7 +194,11 @@ a {
 		}
 }
 
-#resource-feature-copy {
+#devices-feature-copy {
+	width: 55%;
+}
+
+#resources-feature-copy {
 	width: 55%;
 }
 
@@ -195,7 +217,7 @@ a {
 
 #details {
 	background: #535e94;
-	padding: 40px 0;
+	padding: 100px 0;
 	text-align: center;
 	color: #FFF;
 	
@@ -211,13 +233,21 @@ a {
 		
 		h4 {
 			padding: 20px 0;
-		}	
+		}
+
+	img {
+		width: 80px;
+		height: 80px;
+	}	
 }
 
 .detail-spacer {
 	width: 30px;
 	vertical-align: baseline;
 }
+
+
+
 
 /*----- NEWSLETTER --------------------------*/
 
@@ -347,6 +377,7 @@ button:focus {
 		margin: 0;
 		text-align: center;
 	}
+	
 
 	.feature-left-copy, .feature-right-copy, 
 	.feature-left-image, .feature-right-image {
@@ -363,6 +394,10 @@ button:focus {
 	#resource-feature-copy {
 		width: 100%;
 	}
+	
+	#devices-feature-copy {
+	width: 100%;
+}
 	
 	.feature-left-image, .feature-right-image {
 		padding: 50px 0;
