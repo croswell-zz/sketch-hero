@@ -145,44 +145,43 @@ a {
 .feature-left-image {
 	padding: 0 40px 60px 0;
 	float: left;
+	max-width: 250px;
 	
-	#devices {
-		padding: 0 20px 60px 0;
-	}
 }
 
 .feature-right-image {
 	padding: 0 0 60px 40px;
 	float: right;
+	max-width: 250px;
 }
 
 #spotlight img {
-	width: 200px;
+	width: 100%;
 	height: auto;
 }
 
 #resources img {
-	width: 315px;
+	width: 100%;
 	height: auto;
 }
 
 #devices img {
-	width: 255px;
+	width: 100%;
 	height: auto;
 }
 
 #devices img {
-	width: 255px;
+	width: 100%;
 	height: auto;
 }
 
 #designer-interviews img {
-	width: 222px;
+	width: 100%;
 	height: auto;
 }
 
 .feature-left-copy, .feature-right-copy {
-	width: 65%;
+	max-width: 670px;
 	
 		h2 {
 			padding-bottom: 30px;
@@ -194,12 +193,8 @@ a {
 		}
 }
 
-#devices-feature-copy {
-	width: 55%;
-}
-
-#resources-feature-copy {
-	width: 55%;
+#explore-feature-copy, #devices-feature-copy, #resources-feature-copy, #designer-interviews-copy,  {
+	width: 100%;
 }
 
 .feature-left-copy { 
@@ -348,18 +343,21 @@ button:focus {
 
 @media screen and (max-width: 831px) {
 	
+/*
 	.container {
 		padding: 0 20px;
 	}
 	
 	.row { display: block;
 	
-	}f
+	}
 	
 	.col {
 		display: block;
 	}
+*/
 		
+/*
 	.feature-list {
 		text-align: center;
 		margin: 0 auto;
@@ -373,7 +371,7 @@ button:focus {
 	}
 	
 	.feature-left, .feature-right {
-		padding: 40px 0;
+		padding: 20px 0;
 		margin: 0;
 		text-align: center;
 	}
@@ -395,13 +393,15 @@ button:focus {
 		width: 100%;
 	}
 	
+	
 	#devices-feature-copy {
 	width: 100%;
-}
+	}
 	
 	.feature-left-image, .feature-right-image {
 		padding: 50px 0;
 	}
+*/
 	
 	#details p {
 		text-align: center;
