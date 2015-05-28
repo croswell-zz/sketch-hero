@@ -135,11 +135,13 @@ a {
 .features-wrapper {
 	margin: 20px 0;
 	padding: 40px 0;
+	max-width: 960px;
 }
 
 .feature-left, .feature-right {
 	margin: 0px 0;
 	padding: 40px 0;
+	width: 100%;
 }
 
 .feature-left-image {
