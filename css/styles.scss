@@ -73,7 +73,7 @@ h4 {
 }
 
 p {
-	line-height: 36px;
+	line-height: 30px;
 }
 
 a {
@@ -102,6 +102,7 @@ a {
 .coming-soon {
 	float: right;
 	font-weight: 400;
+	max-width: 200px;
 
 		a {
 			color: #fff;
@@ -126,42 +127,26 @@ a {
 /*----- DESCRIPTION ------------------------*/
 
 .description {
-	padding: 40px 80px;
+	padding: 50px 80px;
 	color: #535e94;
 }
 
 /*----- FEATURES LIST ------------------------*/
 
 .features-wrapper {
-	margin: 20px 0;
-	padding: 40px 0;
+	margin: 0px 0;
+	padding: 0px 0;
 }
 
-.feature-left {
-	margin: 0;
-	padding: 40px 0;
+.feature-left, .feature-right {
+	margin: 20px 0;
+	padding: 50px 0;
 	width: 100%;
 }
 
-.feature-left-image {
-	position: relative;
-	float: left;
-	padding: 0;
-	margin: 0;
-	max-width: 400px;
-	overflow: hidden;
-	background: blue;
-	
-		img {
-			width: 100%;
-		}
-}
-
-.feature-left-copy {
+.feature-left-copy, .feature-right-copy {
 	display: inline-block;
 	max-width: 50%;
-	padding: 0 0 0 20px;
-	float: right;
 	
 		h2 {
 			padding-bottom: 30px;
@@ -173,7 +158,36 @@ a {
 		}
 }
 
+.feature-left-copy {
+	float: left;
+	padding-right: 0 20px;
+}
 
+.feature-right-copy {
+	float: right;
+	padding-left: 20px;
+}
+
+.feature-left-image, .feature-right-image {
+	position: relative;
+	padding: 0;
+	margin: 0;
+	max-width: 400px;
+	height: auto;
+	overflow: hidden;
+	
+		img {
+			width: 100%;
+		}
+}
+
+.feature-left-image {
+	float: right;
+}
+
+.feature-right-image {
+	float: left;
+}
 
 
 /*----- DETAILS --------------------------*/
@@ -186,7 +200,7 @@ a {
 	color: #FFF;
 	
 		p {
-			text-align: left;
+			text-align: center;
 			font-size: 14px;
 			line-height: 24px;
 		}
@@ -218,7 +232,8 @@ a {
 #newsletter {
 	background: #535e94;
 	color: #FFF;
-	padding: 40px 0;	
+	padding: 40px 0;
+	text-align: center;	
 }
 
 .optin-container {
@@ -232,10 +247,14 @@ a {
 
 form {
 	padding: 40px 0;
+	margin: 0 auto;
+	text-align: center;
 }
 
 input {
-	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	width: 50%;
 	vertical-align: baseline;
 	display: inline-block;
 	border: 0;
@@ -259,17 +278,18 @@ input {
 }
 
 .btn-container {
-	padding: 40px 0;
+	padding: 20px 0;
 }
 
 
 button {
 	outline: none;
-	padding: 0 40px;
+	padding: 0 20px;
 	text-align: center;
 	color: #FFF;
 	font-family: "Lato",sans-serif;
 	height: 50px;
+	width: 50%;
 	border: none;
 	border-radius: 6px;
 	-webkit-border-radius: 6px;
@@ -315,14 +335,6 @@ button:focus {
 	.container {
 		padding: 0 20px;
 	}
-	
-	.row { display: block;
-	
-	}
-	
-	.col {
-		display: block;
-	}
 		
 	.feature-list {
 		text-align: center;
@@ -336,19 +348,19 @@ button:focus {
 		text-align: left;
 	}
 	
-	.feature-left {
+	.feature-left, .feature-right {
+		margin: 20px 0;
 		padding: 20px 0;
-		margin: 0;
 		width: 100%;
 	}
 	
-	.feature-left-image {
+	.feature-left-image, .feature-right-image {
 		display: block;
 		float: none;
 		margin: 0 auto;
 	}
 	
-	.feature-left-copy {
+	.feature-left-copy, .feature-right-copy {
 		margin: 40px 0;
 		display: block;
 		float: none;
@@ -364,6 +376,12 @@ button:focus {
 	#details p {
 		text-align: center;
 	}
+	
+	input {
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+	}
 
 	.btn-container {
 		padding: 10px 0;
@@ -373,3 +391,16 @@ button:focus {
 		}
 	}
 }
+
+@media screen and (max-width: 729px) {
+	
+	.row { display: block;
+	
+	}
+	
+	.col {
+		display: block;
+	}
+}	
+	
+	
