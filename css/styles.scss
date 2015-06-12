@@ -9,6 +9,7 @@ body {
 	font-size: 18px;
 	color: #000;
 	font-weight: 400;
+	background-color: #FFF;git
 
 }
 
@@ -24,7 +25,6 @@ body {
 	margin: 0 auto;
 	max-width: 960px;
 	overflow: hidden;
-
 }
 
 @media (min-width: 30em) {
@@ -73,7 +73,7 @@ h4 {
 }
 
 p {
-	line-height: 30px;
+	line-height: 36px;
 }
 
 a {
@@ -102,7 +102,6 @@ a {
 .coming-soon {
 	float: right;
 	font-weight: 400;
-	max-width: 200px;
 
 		a {
 			color: #fff;
@@ -127,26 +126,63 @@ a {
 /*----- DESCRIPTION ------------------------*/
 
 .description {
-	padding: 50px 80px;
+	padding: 40px 80px;
 	color: #535e94;
 }
 
 /*----- FEATURES LIST ------------------------*/
 
 .features-wrapper {
-	margin: 0px 0;
-	padding: 0px 0;
+	margin: 20px 0;
+	padding: 40px 0;
 }
 
 .feature-left, .feature-right {
-	margin: 20px 0;
-	padding: 50px 0;
-	width: 100%;
+	margin: 0px 0;
+	padding: 40px 0;
+}
+
+.feature-left-image {
+	padding: 0 40px 60px 0;
+	float: left;
+	
+	#devices {
+		padding: 0 20px 60px 0;
+	}
+}
+
+.feature-right-image {
+	padding: 0 0 60px 40px;
+	float: right;
+}
+
+#spotlight img {
+	width: 200px;
+	height: auto;
+}
+
+#resources img {
+	width: 315px;
+	height: auto;
+}
+
+#devices img {
+	width: 255px;
+	height: auto;
+}
+
+#devices img {
+	width: 255px;
+	height: auto;
+}
+
+#designer-interviews img {
+	width: 222px;
+	height: auto;
 }
 
 .feature-left-copy, .feature-right-copy {
-	display: inline-block;
-	max-width: 50%;
+	width: 65%;
 	
 		h2 {
 			padding-bottom: 30px;
@@ -158,36 +194,22 @@ a {
 		}
 }
 
-.feature-left-copy {
-	float: left;
-	padding-right: 0 20px;
+#devices-feature-copy {
+	width: 55%;
+}
+
+#resources-feature-copy {
+	width: 55%;
+}
+
+.feature-left-copy { 
+	float: right;
 }
 
 .feature-right-copy {
-	float: right;
-	padding-left: 20px;
-}
-
-.feature-left-image, .feature-right-image {
-	position: relative;
-	padding: 0;
-	margin: 0;
-	max-width: 400px;
-	height: auto;
-	overflow: hidden;
-	
-		img {
-			width: 100%;
-		}
-}
-
-.feature-left-image {
-	float: right;
-}
-
-.feature-right-image {
 	float: left;
 }
+
 
 
 /*----- DETAILS --------------------------*/
@@ -200,7 +222,7 @@ a {
 	color: #FFF;
 	
 		p {
-			text-align: center;
+			text-align: left;
 			font-size: 14px;
 			line-height: 24px;
 		}
@@ -232,8 +254,7 @@ a {
 #newsletter {
 	background: #535e94;
 	color: #FFF;
-	padding: 40px 0;
-	text-align: center;	
+	padding: 40px 0;	
 }
 
 .optin-container {
@@ -247,14 +268,10 @@ a {
 
 form {
 	padding: 40px 0;
-	margin: 0 auto;
-	text-align: center;
 }
 
 input {
-	margin: 0 auto;
-	text-align: center;
-	width: 50%;
+	width: 100%;
 	vertical-align: baseline;
 	display: inline-block;
 	border: 0;
@@ -278,18 +295,17 @@ input {
 }
 
 .btn-container {
-	padding: 20px 0;
+	padding: 40px 0;
 }
 
 
 button {
 	outline: none;
-	padding: 0 20px;
+	padding: 0 40px;
 	text-align: center;
 	color: #FFF;
 	font-family: "Lato",sans-serif;
 	height: 50px;
-	width: 50%;
 	border: none;
 	border-radius: 6px;
 	-webkit-border-radius: 6px;
@@ -330,10 +346,18 @@ button:focus {
 
 /*----- MEDIA QUIERES --------------------------*/
 
-@media screen and (max-width: 833px) {
+@media screen and (max-width: 831px) {
 	
 	.container {
 		padding: 0 20px;
+	}
+	
+	.row { display: block;
+	
+	}f
+	
+	.col {
+		display: block;
 	}
 		
 	.feature-list {
@@ -349,38 +373,38 @@ button:focus {
 	}
 	
 	.feature-left, .feature-right {
-		margin: 20px 0;
-		padding: 20px 0;
-		width: 100%;
-	}
-	
-	.feature-left-image, .feature-right-image {
-		display: block;
-		float: none;
-		margin: 0 auto;
-	}
-	
-	.feature-left-copy, .feature-right-copy {
-		margin: 40px 0;
-		display: block;
-		float: none;
-		max-width: 100%;
-		
-		h2 {
-			text-align: center;
-		}
-	}
-
-
-		
-	#details p {
+		padding: 40px 0;
+		margin: 0;
 		text-align: center;
 	}
 	
-	input {
-	margin: 0 auto;
-	text-align: center;
+
+	.feature-left-copy, .feature-right-copy, 
+	.feature-left-image, .feature-right-image {
+		float: none;
+		display: block;
+		width: 100%;
+	}
+	
+	.feature-left-copy, .feature-right-copy {
+		padding: 0;
+		margin: 0;
+	}
+
+	#resources-feature-copy {
+		width: 100%;
+	}
+	
+	#devices-feature-copy {
 	width: 100%;
+}
+	
+	.feature-left-image, .feature-right-image {
+		padding: 50px 0;
+	}
+	
+	#details p {
+		text-align: center;
 	}
 
 	.btn-container {
@@ -391,16 +415,3 @@ button:focus {
 		}
 	}
 }
-
-@media screen and (max-width: 729px) {
-	
-	.row { display: block;
-	
-	}
-	
-	.col {
-		display: block;
-	}
-}	
-	
-	
